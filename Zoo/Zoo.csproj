@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="8.0.1" />
+    <PackageReference Include="ClosedXML" Version="0.102.2" />
+    <PackageReference Include="Microsoft.VisualBasic" Version="10.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="UI\AddColumnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\AddRowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\CreateTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\DeleteColumnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.secrets.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="docs\images\" />
+  </ItemGroup>
+</Project>

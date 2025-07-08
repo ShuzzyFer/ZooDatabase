@@ -1,0 +1,45 @@
+﻿# Visual Studio Code
+.vscode/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+artifacts/
+
+# Nuget
+**/packages/
+*.nupkg
+*.snupkg
+
+# User-specific files
+*.DotSettings.user
+
+# Local configuration files
+# --- ВАЖНО: Исключаем локальный конфиг с паролями ---
+App.secrets.config
+
+# Miscellaneous
+*.pem
+*.pfx
+*.bak
+*.log
+*.DS_Store
+Thumbs.db
